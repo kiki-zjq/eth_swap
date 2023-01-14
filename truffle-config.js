@@ -1,6 +1,7 @@
 require('babel-register');
 require('babel-polyfill');
 
+// entry point
 module.exports = {
   networks: {
     development: {
@@ -16,7 +17,8 @@ module.exports = {
       optimizer: {
         enabled: true,
         runs: 200
-      }
+      },
+      evmVersion: "petersburg"
     }
   }
 }
